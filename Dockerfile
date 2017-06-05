@@ -17,6 +17,7 @@ ENV PATH /opt/crystal-head/bin:/opt/llvm-3.5.0-1/bin:/usr/local/sbin:/usr/local/
 MAINTAINER Elias J. Perez "eliasjpr@gmail.com"
 
 ENV AMBER_VERSION=v0.1.13
+ENV AMBER_ENV=production
 ENV PORT=80
 
 RUN crystal --version
