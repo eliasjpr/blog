@@ -17,11 +17,14 @@ ENV PATH /opt/crystal-head/bin:/opt/llvm-3.5.0-1/bin:/usr/local/sbin:/usr/local/
 MAINTAINER Elias J. Perez "eliasjpr@gmail.com"
 
 ENV AMBER_VERSION=v0.1.13
+ENV PORT=80
 
 RUN crystal --version
 
 ADD ./ /opt/blog-app/
 WORKDIR /opt/blog-app
+
+EXPOSE 80
 
 RUN crystal deps
 RUN crystal build --release ./src/blog.cr -o ./app
