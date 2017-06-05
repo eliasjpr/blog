@@ -29,6 +29,6 @@ EXPOSE 80
 
 RUN crystal deps
 RUN crystal build --release ./src/blog.cr -o ./app
-RUN export PROCESS_COUNT=$(nproc) && ./app
+RUN export PROCESS_COUNT=$(nproc) & PORT=$PORT & AMBER_ENV=$AMBER_ENV && ./app
 
 CMD ["crystal", "spec"]
