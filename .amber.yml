@@ -2,6 +2,6 @@ type: app
 database: pg
 language: slang
 digitalocean:
-  token: d784cb091778071484b5f1584889fc542f66df1fae68a8759e6043b275a26017
+  token: a8b81d25fe2d28f5f856e54b766d26babb20e6b0a15a5cad380ec34f9ca81aca
   ipv6: true
   private-networking: true
